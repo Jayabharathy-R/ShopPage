@@ -12,7 +12,6 @@ import {
   Typography,
   Menu,
   Container,
-  Avatar,
   Tooltip,
   Button,
   MenuItem,
@@ -21,8 +20,7 @@ import {
   Card,
   CardActions,
   CardContent,
-  Rating,
-  appBarClasses,
+  Rating
 } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
@@ -33,17 +31,12 @@ export default function App() {
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  const [value, setValue] = React.useState(5);
   const [count, setCount] = React.useState(0);
 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
